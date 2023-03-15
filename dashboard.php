@@ -278,7 +278,6 @@ $countclosedlead = $leadclosedquery->num_rows;
                 <div class="card">
                     <div class="card-header">
                         <strong class="card-title">New Leads</strong>
-
                         <div class="table-responsive m-t-40">
                             <table id="myTable" class="table table-bordered table-striped">
                                 <thead>
