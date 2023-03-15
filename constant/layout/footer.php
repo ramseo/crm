@@ -1,6 +1,5 @@
 <?php
 include('./constant/connect.php');
-
 ?>
 
 </div>

@@ -12,16 +12,11 @@ require_once('./constant/connect.php');
             </div>
         </marquee>
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
-
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.php">
-
-
                     <b><img src="./assets/uploadImage/Logo/logo.jpg" alt="homepage" class="dark-logo" style="width:100%;height:auto;" /></b>
-
                 </a>
             </div>
-
             <div class="navbar-collapse">
                 <ul class="navbar-nav  mt-md-0">
                     <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-white  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
@@ -53,5 +48,4 @@ require_once('./constant/connect.php');
                 </ul>
             </div>
         </nav>
-
     </div>
