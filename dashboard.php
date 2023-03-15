@@ -335,6 +335,29 @@ $countclosedlead = $leadclosedquery->num_rows;
                                             <td><?php echo $row['appointment_for'] ?></td>
                                             <td><?php echo $row['age'] ?></td>
                                             <td><?php echo $row['url'] ?></td>
+                                            <td>
+                                                <?php
+                                                if ($row['status'] == 1) {
+                                                    $status = "<label class='label label-primary' ><h4>New</h4></label>";
+                                                    echo $status;
+                                                } else if ($row['status'] == 2) {
+                                                    $status = "<label class='label label-primary'><h4> Working</h4></label>";
+                                                    echo $status;
+                                                } else if ($row['status'] == 3) {
+                                                    $status = "<label class='label label-primary'><h4> Contacted</h4></label>";
+                                                    echo $status;
+                                                } else if ($row['status'] == 4) {
+                                                    $status = "<label class='label label-success'><h4> Qualified</h4></label>";
+                                                    echo $status;
+                                                } else if ($row['status'] == 5) {
+                                                    $status = "<label class='label label-danger'><h4> Failed</h4></label>";
+                                                    echo $status;
+                                                } else if ($row['status'] == 6) {
+                                                    $status = "<label class='label label-danger'><h4> Closed</h4></label>";
+                                                    echo $status;
+                                                }
+                                                ?>
+                                            </td>
                                         </tr>
                                 </tbody>
                             <?php
