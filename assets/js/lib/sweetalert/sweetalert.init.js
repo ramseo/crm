@@ -1,5 +1,8 @@
-document.querySelector('.sweet-prompt').onclick = function(){
-    swal({
+var elem = document.querySelector('.sweet-prompt');
+
+if (elem) {
+    document.querySelector('.sweet-prompt').onclick = function () {
+        swal({
             title: "Enter an input !!",
             text: "Write something interesting !!",
             type: "input",
@@ -8,12 +11,13 @@ document.querySelector('.sweet-prompt').onclick = function(){
             animation: "slide-from-top",
             inputPlaceholder: "Write something"
         },
-        function(inputValue){
-            if (inputValue === false) return false;
-            if (inputValue === "") {
-                swal.showInputError("You need to write something!");
-                return false
-            }
-            swal("Hey !!", "You wrote: " + inputValue, "success");
-        });
-};
+            function (inputValue) {
+                if (inputValue === false) return false;
+                if (inputValue === "") {
+                    swal.showInputError("You need to write something!");
+                    return false
+                }
+                swal("Hey !!", "You wrote: " + inputValue, "success");
+            });
+    };
+}

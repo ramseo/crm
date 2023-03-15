@@ -25,33 +25,33 @@ $lowStockSql2 = "SELECT * FROM orders WHERE order_status =1";
 $lowStockQuery2 = $connect->query($lowStockSql2);
 $countLowStock2 = $lowStockQuery2->num_rows;
 
-$leadsql = "SELECT * FROM lead where lead_status=1";
+$leadsql = "SELECT * FROM `inquiry_data`";
 $leadquery = $connect->query($leadsql);
 $countlead = $leadquery->num_rows;
 
-$newleadsql = "SELECT * FROM lead where lead_status=1 and status=1";
+$newleadsql = "SELECT * FROM `inquiry_data` where status=1";
 $leadnewquery = $connect->query($newleadsql);
 $countnewlead = $leadnewquery->num_rows;
 
-$workleadsql = "SELECT * FROM lead where lead_status=1 and status=2";
+$workleadsql = "SELECT * FROM `inquiry_data` where status=2";
 $leadworkquery = $connect->query($workleadsql);
 $countworklead = $leadworkquery->num_rows;
 
-$contactleadsql = "SELECT * FROM lead where lead_status=1 and status=3";
+$contactleadsql = "SELECT * FROM `inquiry_data` where status=3";
 $leadcontactquery = $connect->query($contactleadsql);
 $countcontactlead = $leadcontactquery->num_rows;
 
 
 
-$qualifiedleadsql = "SELECT * FROM lead where lead_status=1 and status=4";
+$qualifiedleadsql = "SELECT * FROM `inquiry_data` where status=4";
 $leadqualifiedquery = $connect->query($qualifiedleadsql);
 $countqualifiedlead = $leadqualifiedquery->num_rows;
 
-$failedleadsql = "SELECT * FROM lead where lead_status=1 and status=5";
+$failedleadsql = "SELECT * FROM `inquiry_data` where status=5";
 $leadfailedquery = $connect->query($failedleadsql);
 $countfailedlead = $leadfailedquery->num_rows;
 
-$closedleadsql = "SELECT * FROM lead where lead_status=1 and status=6";
+$closedleadsql = "SELECT * FROM `inquiry_data` where status=6";
 $leadclosedquery = $connect->query($closedleadsql);
 $countclosedlead = $leadclosedquery->num_rows;
 //$connect->close();
@@ -142,10 +142,6 @@ $countclosedlead = $leadclosedquery->num_rows;
                                 <span><i class="ti-receipt"></i></span>
                             </div>
                             <div class="media-body media-text-right">
-
-
-
-
                                 <h2 class="color-white"><?php echo $countlead; ?></h2>
                                 <a href="lead.php">
                                     <p class="m-b-0">Total Leads</p>
@@ -156,7 +152,6 @@ $countclosedlead = $leadclosedquery->num_rows;
                 </div>
             <?php } ?>
 
-
             <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
                 <div class="col-md-3 dashboard">
                     <div class="card" style="background:#fff ">
@@ -165,15 +160,6 @@ $countclosedlead = $leadclosedquery->num_rows;
                                 <span><i class="ti-new-window"></i></span>
                             </div>
                             <div class="media-body media-text-right">
-
-
-
-
-
-
-
-
-
                                 <h2 class="color-white"><?php echo $countnewlead; ?></h2>
                                 <a href="new-lead.php">
                                     <p class="m-b-0">Total New Leads</p>
@@ -288,8 +274,6 @@ $countclosedlead = $leadclosedquery->num_rows;
 
             <?php } ?>
 
-
-
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -309,9 +293,6 @@ $countclosedlead = $leadclosedquery->num_rows;
                                         <th>Age</th>
                                         <th>Source</th>
                                         <th>Status</th>
-                                        <!-- <th>Follow Ups</th>
-                                        <th>Percentage</th>
-                                        <th>Action</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>

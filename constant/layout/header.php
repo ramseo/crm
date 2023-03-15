@@ -5,14 +5,10 @@ require_once('./constant/connect.php');
 ?>
 
 <div id="main-wrapper">
-
     <div class="header">
         <marquee class="d-lg-none d-block">
-            <div class="ml-lg-5 pl-lg-5 ">
-
+            <div class="ml-lg-5 pl-lg-5">
                 <b id="ti" class="ml-lg-5 pl-lg-5"></b>
-
-
             </div>
         </marquee>
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
