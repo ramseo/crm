@@ -2,7 +2,7 @@
 <?php include('./constant/layout/header.php'); ?>
 
 <?php include('./constant/layout/sidebar.php'); ?>
-<?php include('./constant/connect.php');
+<?php // include('./constant/connect.php');
 $sql = "SELECT brand_id, brand_name, brand_active, brand_status FROM `brands` WHERE brand_status = 1";
 $result = $connect->query($sql);
 //echo $sql;exit;

@@ -3,7 +3,7 @@
 <?php include('./constant/layout/header.php');?>
 
 <?php include('./constant/layout/sidebar.php');?> 
-<link rel="stylesheet" href="assets/css/popup_style.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>assets/css/popup_style.css">
  <?php
 //session_start();
 //error_reporting(0);

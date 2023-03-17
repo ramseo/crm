@@ -79,7 +79,7 @@ $mail->Body    = "Hello, Your New Password is :'".$otp."' ";
 if ($mail->send()) {
     
 ?>
-<link rel="stylesheet" href="assets/css/popup_style.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>assets/css/popup_style.css">
 <div class="popup popup--icon -success js_success-popup popup--visible">
   <div class="popup__background"></div>
   <div class="popup__content">
@@ -93,7 +93,7 @@ if ($mail->send()) {
   </div>
 </div>
 <?php } else { ?>
-<link rel="stylesheet" href="assets/css/popup_style.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>assets/css/popup_style.css">
 <div class="popup popup--icon -error js_error-popup popup--visible">
   <div class="popup__background"></div>
   <div class="popup__content">

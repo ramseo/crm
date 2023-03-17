@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="assets/css/popup_style.css">
-
-
-</style>
 <?php
-
 include('./constant/layout/head.php');
-include('./constant/connect.php');
+?>
+
+<link rel="stylesheet" href="<?= BASE_URL ?>assets/css/popup_style.css">
+
+<?php
+// include('./constant/connect.php');
 session_start();
 
 if (isset($_SESSION['userId'])) {

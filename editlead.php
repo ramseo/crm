@@ -3,7 +3,7 @@
 
 <?php include('./constant/layout/sidebar.php'); ?>
 
-<?php include('./constant/connect.php');
+<?php // include('./constant/connect.php');
 
 $sql = "SELECT * from `inquiry_data` where  id='" . $_GET['id'] . "'";
 $result = $connect->query($sql)->fetch_assoc();  ?>

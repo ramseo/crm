@@ -4,7 +4,7 @@
 <?php include('./constant/layout/sidebar.php');?>   
 <link rel="stylesheet" href="custom/js/order.js">
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<?php include('./constant/connect.php');
+<?php // include('./constant/connect.php');
 
 
 
@@ -87,7 +87,7 @@ echo "Edit Order";
                   <label class="col-sm-2 control-label">Invoice No</label>
                    <div class="col-sm-4">
                     <?php 
-                    include('./constant/connect.php');
+                  //  include('./constant/connect.php');
                     $sql = "select count(*) as cnt from orders";
                     $row = $connect->query($sql)->fetch_assoc();
                     

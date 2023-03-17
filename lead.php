@@ -7,7 +7,7 @@ include('./constant/layout/head.php'); ?>
 <?php include('./constant/layout/header.php'); ?>
 
 <?php include('./constant/layout/sidebar.php'); ?>
-<?php include('./constant/connect.php'); ?>
+<?php // include('./constant/connect.php'); ?>
 <!--  Author Name: Mayuri K. = www.mayurik.com
  for any PHP, Codeignitor or Laravel work contact me at mayuri.infospace@gmail.com  -->
 <div class="page-wrapper">

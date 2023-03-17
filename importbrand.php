@@ -4,7 +4,7 @@
 <?php include('./constant/layout/sidebar.php');?> 
 
  
- <link href="assets/css/custom.css" rel="stylesheet"> 
+ <link href="<?= BASE_URL ?>assets/css/custom.css" rel="stylesheet"> 
  
 
  

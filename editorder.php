@@ -4,7 +4,7 @@
 <?php include('./constant/layout/sidebar.php');?>   
 <!-- <link rel="stylesheet" href="custom/js/order.js"> -->
 
-<?php include('./constant/connect.php');
+<?php // include('./constant/connect.php');
 
  
 

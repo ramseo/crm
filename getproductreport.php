@@ -2,7 +2,7 @@
 <?php include('./constant/layout/header.php');?>
 
 <?php include('./constant/layout/sidebar.php');?>   
-<?php include('../constant/connect.php');?>
+<?php // include('../constant/connect.php');?>
 <?php 
 
 require_once 'php_action/core.php';
