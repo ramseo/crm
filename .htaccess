@@ -1,16 +1,15 @@
-#php_flag display_errors off
+RewriteEngine On
 
+# Map http://www.example.com to /jekyll.
+RewriteRule ^$ /crm/ [L]
 
-RewriteBase   /crm
-
-ErrorDocument 404 /404.php
-
-Options -Indexes -MultiViews
-RewriteEngine on
-
-RewriteCond %{THE_REQUEST} \.php [NC]
-RewriteRule ^(?!404\.php)$ - [L,NC,R=404]
-
+# Map http://www.example.com/x to /jekyll/x unless there is a x in the web root.
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([^/]+)/?(.*)$ ./$1.php [L]
+RewriteCond %{REQUEST_URI} !^/crm/
+RewriteRule ^(.*)$ /crm/$1
+
+# Add trailing slash to directories within jekyll
+# This does not expose the internal URL.
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteRule ^crm/(.*[^/])$ http://www.kambec.in/$1/ [R=301]
