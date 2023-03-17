@@ -1,5 +1,8 @@
 #php_flag display_errors off
 
+
+RewriteBase   /crm
+
 ErrorDocument 404 /404.php
 
 Options -Indexes -MultiViews
