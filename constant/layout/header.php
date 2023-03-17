@@ -14,7 +14,9 @@ require_once('./constant/connect.php');
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.php">
-                    <b><img src="./assets/uploadImage/Logo/logo.jpg" alt="homepage" class="dark-logo" style="width:100%;height:auto;" /></b>
+                    <b>
+                        <img src="./assets/uploadImage/Logo/logo.png" alt="homepage" class="dark-logo" style="width:100%;height:70px;" />
+                    </b>
                 </a>
             </div>
             <div class="navbar-collapse">
