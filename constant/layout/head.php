@@ -36,7 +36,7 @@
   ?>
   <title>Penglead Lead management System</title>
 
-  <link href="assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
+  <link href="./assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
   <link href="assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
   <link href="assets/css/lib/owl.theme.default.min.css" rel="stylesheet" />
 
